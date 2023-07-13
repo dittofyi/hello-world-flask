@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+    <title>Hello World - Ditto</title>
+</head>
+
+<style>
+  html {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, Geneva, Tahoma, sans-serif;
+  }
+
+  .content {
+    text-align: center;
+    display: flex;
+
+    width: 100%;
+    flex-direction: column;
+
+    gap: 10vh;
+
+    padding: 3rem;
+  }
+
+  .top-content {
+    width: 60%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+
+  .bottom-content {
+    width: 60%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    gap: 2rem;
+
+    border-top: 1px solid #d3d3d3; /* Simulates a dividing line */
+  }
+
+  .cool-space {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .selfie {
+    height: auto;
+    width: auto;
+    max-height: 300px;
+    max-width: 200px;
+  }
+</style>
+<body>
+  <div class="content">
+    <div class="top-content">
+      <h1>Hello 🌎, welcome to Ditto!</h1> 
+
+      <p>We couldn't convert our 
+        <a target="_blank" href="https://ditto.fyi">ditto.fyi</a>
+        domain, so we're using 
+        <a target="_blank" href="http://ditt.fyi">ditt.fyi</a>
+        for now. Just know it's the same thing!
+      </p>
+
+      <h4>
+        If you're a developer,
+        <a target="_blank" href="https://github.com/dittofyi/hello-world-flask" target="_blank">click here</a>
+        to see the code for this page and learn how to add your own.
+      </h4>
+
+      <h5>If you want to talk to us, email team@ditto.fyi. Or come stop by our coworking space. We're in NYC. </h5>
+
+      <img class="selfie" src="{{ url_for('static', filename='images/selfie.jpg')}}" alt="Grinding at the office" />
+    </div>
+
+    <div class="bottom-content">
+      <h4 class="">Here are some cool spaces we want to feature:</h4>
+
+      <div class="cool-space">
+        <h3><a target="_blank" href="http://staff.ditt.fyi">staff.ditt.fyi</a></h3>
+        <p>|</p>
+        <p>Our staff page (yes, we're going to feature it.)</p>
+      </div>
+
+      <div class="cool-space">
+        <h3><a target="_blank" href="http://shipitfriday.ditt.fyi">shipitfriday.ditt.fyi</a></h3>
+        <p>|</p>
+        <p>
+          <a target="_blank" href="https://verci.com">The office that we work at in NYC</a> has this thing called Ship it Friday, where 
+          members talk about what they did during the week. This space talks about
+          cool stuff that saw during Ship it Friday. May include our own stuff 
+        </p>
+      </div>
+    </div>
+  </div>
+
+</body>
+ 
+</html>

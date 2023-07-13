@@ -1,7 +1,8 @@
 # Create your own space on Ditto!
 
-This repository serves as an easy-to-understand example of how to get your
-own space running on Ditto. 
+This repository serves as an easy-to-understand example of a Ditto space. 
+
+There are also instructions on how to get your own space running on Ditto. 
 
 ## Overview
 
@@ -14,6 +15,6 @@ At a high level, creating space on Ditto consists of x steps.
 
 We'll create a way to automatically submit and deploy repositories soon.
 
-
+## .yaml file 
 
 

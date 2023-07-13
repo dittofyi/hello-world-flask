@@ -23,15 +23,15 @@ We need to keep track of who is uploading what space, and what the name of each 
 
 It will always be up to the creator of a space to set its information. As of now, all you need to set is the name of your space. As the platform gets more advanced, there will be more configuration options. 
 
-The filename **MUST** be `arch.toml`. Your `arch.toml` file must follow the exact format below:
+The filename **MUST** be `arch.toml`. Your `arch.toml` file **MUST** follow the exact format below:
 
 ```toml
-name = <YOUR-NAME-HERE>
+name = "<YOUR-NAME-HERE>"
 ```
 
 The name you set will be the subdomain we host your space at. So you can find it at `<YOUR-NAME>`.ditt.fyi, if approved. If a name is taken, you'll have to pick another one.
 
-**Here's the [list of all currently used space names]()**
+**Here's the [list of all currently used names]()**
 
 ## Social integration and widgets with ActivityPub
 
@@ -40,7 +40,6 @@ We've built an [open source, ActivityPub-compatible, federated social media serv
  - communicate and push content to the fediverse via your space
 
 It's completely optional to use these social features, but doing so requires a more involved process. You will have to run a containerized instance of our federated server, then expose your web app on top of it. [Check out our staff page]() for an example of how to do this.
-
 
 ## Current limitations
 

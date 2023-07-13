@@ -2,6 +2,7 @@
 <html>
  
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Hello World - Ditto</title>
 </head>
 
@@ -22,25 +23,16 @@
     padding: 3rem;
   }
 
-  .top-content {
-    width: 60%;
-    margin: auto;
-
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-  }
+  .top-content, .bottom-content {
+      width: 60%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
 
   .bottom-content {
-    width: 60%;
-    margin: auto;
-
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-
     gap: 2rem;
-
     border-top: 1px solid #d3d3d3; /* Simulates a dividing line */
   }
 
@@ -56,6 +48,28 @@
     width: auto;
     max-height: 300px;
     max-width: 200px;
+  }
+
+
+  /* Media query for devices with max width of 768px */
+  @media only screen and (max-width: 768px) {
+    .top-content, .bottom-content {
+      width: 90%; /* Increase width to give more space on smaller devices */
+    }
+
+    .cool-space {
+      flex-direction: column; /* Stack elements vertically on smaller screens */
+      text-align: center; /* Center text on smaller screens */
+    }
+
+    .selfie {
+      max-height: 200px;
+      max-width: 150px; /* Make the image smaller on mobile devices */
+    }
+
+    .bar {
+      display: none;
+    }
   }
 </style>
 <body>
@@ -86,13 +100,13 @@
 
       <div class="cool-space">
         <h3><a target="_blank" href="http://staff.ditt.fyi">staff.ditt.fyi</a></h3>
-        <p>|</p>
+        <p class="bar">|</p>
         <p>Our staff page (yes, we're going to feature it.)</p>
       </div>
 
       <div class="cool-space">
         <h3><a target="_blank" href="http://shipitfriday.ditt.fyi">shipitfriday.ditt.fyi</a></h3>
-        <p>|</p>
+        <p class="bar">|</p>
         <p>
           <a target="_blank" href="https://verci.com">The office that we work at in NYC</a> has this thing called Ship it Friday, where 
           members talk about what they did during the week. This space talks about
@@ -101,7 +115,6 @@
       </div>
     </div>
   </div>
-
 </body>
  
 </html>
